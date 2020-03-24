@@ -3,12 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Registration form</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <h1>Ready to get started?</h1>
-    <p>Prepare to join one of the top lawyer communities</p>
-    <form>
+    <h1 class="title text-center">Ready to get started?</h1>
+    <p class="subtitle text-center ">
+      Prepare to join one of the top lawyer communities
+    </p>
+    <form class="form">
       <label for="first_name">
         First Name
         <input type="text" id="first_name" name="first_name" required />
@@ -33,6 +41,7 @@
           id="zip_code"
           name="zip_code"
           placeholder="123456"
+          maxlength="6"
           pattern="^[0-9]{6}$"
           required
         />
@@ -68,8 +77,8 @@
           required
         />
       </label>
-      <label for="ethnicity">
-        Ethnicity <small>(optional)</small>
+      <label for="ethnicity" class="ethnicity">
+        <span>Ethnicity <small class="optional">(optional)</small></span>
         <input
           type="radio"
           name="ethnicity"
@@ -84,8 +93,8 @@
         Asgardian
       </label>
       <label for="languages">
-        Languages <small>(optional)</small>
-        <select name="languages" id="languages" multiple>
+        Languages <small class="optional">(optional)</small>
+        <select name="languages" id="languages" class="languages" multiple>
           <option value="es">Spanish</option>
           <option value="en">English</option>
           <option value="do">Dothraki</option>
@@ -97,14 +106,14 @@
         </select>
       </label>
       <label for="phone_number">
-        Cell phone number <small>(optional)</small>
+        Cell phone number <small class="optional">(optional)</small>
         <input type="tel" name="phone_number" id="phone_number" />
       </label>
-      <label for="terms_of_use">
+      <label for="terms_of_use" class="terms">
         <input type="checkbox" name="terms_of_use" id="terms_of_use" /> I swear
         that i totally read the terms of use
       </label>
-      <input type="submit" value="create your account" />
+      <input type="submit" value="create your account" class="submit" />
     </form>
   </body>
 </html>

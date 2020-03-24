@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #edf2f7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.form input {
+  padding: 5px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  border-radius: 4px;
+  height: 30px;
+  border: 1px solid #000000;
+  background: none;
+  background-color: #fff;
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"] {
+  width: auto;
+  height: auto;
+}
+
+.form .ethnicity {
+  text-transform: lowercase;
+}
+
+.form .ethnicity span {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.form .optional {
+  text-transform: lowercase;
+  color: #4a5568;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.form .languages {
+  height: auto;
+  width: 70%;
+}
+
+.form .terms {
+  text-transform: capitalize;
+}
+
+.form .submit {
+  background-color: #718096;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
