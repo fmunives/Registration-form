@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <h1>Ready to get started?</h1>
+    <p>Prepare to join one of the top lawyer communities</p>
+    <form>
+      <label for="first_name">
+        First Name
+        <input type="text" id="first_name" name="first_name" required />
+      </label>
+      <label for="last_name">
+        Laste Name
+        <input type="text" id="last_name" name="last_name" required />
+      </label>
+      <label for="email">
+        Email
+        <input type="email" id="email" name="email" required />
+      </label>
+      <label for="password">
+        Password
+        <input type="password" id="password" name="password" required />
+      </label>
+      <label for="zip_code">
+        Zip Code
+        <!-- //TODO pattern for only six digits permitted -->
+        <input
+          type="number"
+          id="zip_code"
+          name="zip_code"
+          placeholder="123456"
+          pattern="^[0-9]{6}$"
+          required
+        />
+      </label>
+      <label for="practicing_status">
+        Pricing Status
+        <select name="practicing_status" id="practicing_status" required>
+          <option value="0">Practicing Lawyer</option>
+          <option value="1">Non Practicing Lawyer</option>
+          <option value="2">Retired Lawyer</option>
+        </select>
+      </label>
+      <label for="legal_expertise">
+        Area of legal expertise
+        <select name="legal_expertise" id="legal_expertise">
+          <option value="Antitrust">Antitrust</option>
+          <option value="Civil_Rights">Civil Rights</option>
+          <option value="Immigration">Immigration</option>
+          <option value="Memes">Memes</option>
+          <option value="Gaming">Gaming</option>
+          <option value="Pretending_to_work">Pretending to work</option>
+          <option value="Other" selected>Other</option>
+        </select>
+      </label>
+      <label for="years_of_experience">
+        Years of experience
+        <input
+          type="number"
+          name="years_of_experience"
+          id="years_of_experience"
+          min="0"
+          max="60"
+          required
+        />
+      </label>
+      <label for="ethnicity">
+        Ethnicity <small>(optional)</small>
+        <input
+          type="radio"
+          name="ethnicity"
+          id="ethnicity"
+          value="Earthling"
+          checked
+        />
+        Earthling
+        <input type="radio" name="ethnicity" id="ethnicity" value="Martian" />
+        Martian
+        <input type="radio" name="ethnicity" id="ethnicity" value="Asgardian" />
+        Asgardian
+      </label>
+      <label for="languages">
+        Languages <small>(optional)</small>
+        <select name="languages" id="languages" multiple>
+          <option value="es">Spanish</option>
+          <option value="en">English</option>
+          <option value="do">Dothraki</option>
+          <option value="ky">Kryptonese</option>
+          <option value="kl">Klingon</option>
+          <option value="vu">Vulcan</option>
+          <option value="ali">Alienese</option>
+          <option value="el">Elvish</option>
+        </select>
+      </label>
+      <label for="phone_number">
+        Cell phone number <small>(optional)</small>
+        <input type="tel" name="phone_number" id="phone_number" />
+      </label>
+      <label for="terms_of_use">
+        <input type="checkbox" name="terms_of_use" id="terms_of_use" /> I swear
+        that i totally read the terms of use
+      </label>
+      <input type="submit" value="create your account" />
+    </form>
+  </body>
+</html>
