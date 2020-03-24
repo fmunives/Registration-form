@@ -35,14 +35,13 @@
       </label>
       <label for="zip_code">
         Zip Code
-        <!-- //TODO pattern for only six digits permitted -->
         <input
-          type="number"
+          type="text"
           id="zip_code"
           name="zip_code"
           placeholder="123456"
           maxlength="6"
-          pattern="^[0-9]{6}$"
+          pattern="[0-9]{6}"
           required
         />
       </label>
